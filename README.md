@@ -1,0 +1,1 @@
+# goods-bidding-app
