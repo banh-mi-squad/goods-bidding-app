@@ -1,5 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Stacks
+### Source Control Branching Model
+- Trunk based development (https://trunkbaseddevelopment.com/)
+### Core
+- typescript
+- react
+- React framework: nextjs
+- CSS Framework: react-bootstrap
+- Additional styles: style-components
+- State management: react context/hooks // Redux, Recoil, MobX, Zustand?
+- Managing calling API: react-query
+- Showcase: story-book
+### Test/Lint
+- eslint/prettier
+- Jest/React Testing library
+- Cypress
+- husky
+### CI
+- CircleCI/Jenkins/Github Action... (will pick one)
+### CD
+- Vercel(for dev/staging deployment)
+- AWS(prod)
+
+
+## Installation
+Use yarn to install dependencies.
+```
+yarn
+```
+
 ## Getting Started
 
 First, run the development server:
