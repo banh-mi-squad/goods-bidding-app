@@ -10,7 +10,9 @@
     "lint": "yarn lint:ts --fix && yarn lint:style",
     "lint:ts": "next lint",
     "lint:style": "stylelint \"**/*.tsx\"",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
@@ -27,12 +29,18 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.12",
     "@types/react": "17.0.37",
     "@types/styled-components": "^5.1.18",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.2",
@@ -43,6 +51,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.27.1",
     "eslint-plugin-react-hooks": "4.3.0",
+    "eslint-plugin-storybook": "^0.5.3",
     "husky": "^7.0.4",
     "jest": "^27.4.5",
     "lint-staged": "^12.1.3",
