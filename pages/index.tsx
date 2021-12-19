@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styled from "styled-components";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 0 2rem;
@@ -46,6 +46,7 @@ const Title = styled.h1`
 const TitleLink = styled.a`
   color: #0070f3;
   text-decoration: none;
+
   &:hover,
   &:focus,
   &:active {
@@ -64,8 +65,8 @@ const Code = styled.code`
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
+    'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
 `;
 
 const Grid = styled.div`
@@ -99,7 +100,7 @@ const Card = styled.a`
   }
 `;
 const CartTitle = styled.h2`
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   font-size: 1.5rem;
 `;
 const CardDescription = styled.p`
@@ -108,7 +109,7 @@ const CardDescription = styled.p`
   line-height: 1.5;
 `;
 
-const Home: NextPage = () => {
+const Home: NextPage = function () {
   return (
     <Container>
       <Head>
@@ -129,17 +130,23 @@ const Home: NextPage = () => {
         <Grid>
           <Card href="https://nextjs.org/docs">
             <CartTitle>Documentation &rarr;</CartTitle>
-            <CardDescription>Find in-depth information about Next.js features and API.</CardDescription>
+            <CardDescription>
+              Find in-depth information about Next.js features and API.
+            </CardDescription>
           </Card>
 
           <Card href="https://nextjs.org/learn">
             <CartTitle>Learn &rarr;</CartTitle>
-            <CardDescription>Learn about Next.js in an interactive course with quizzes!</CardDescription>
+            <CardDescription>
+              Learn about Next.js in an interactive course with quizzes!
+            </CardDescription>
           </Card>
 
           <Card href="https://github.com/vercel/next.js/tree/master/examples">
             <CartTitle>Examples &rarr;</CartTitle>
-            <CardDescription>Discover and deploy boilerplate example Next.js projects.</CardDescription>
+            <CardDescription>
+              Discover and deploy boilerplate example Next.js projects.
+            </CardDescription>
           </Card>
 
           <Card href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
@@ -157,7 +164,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{' '}
           <Logo>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </Logo>
