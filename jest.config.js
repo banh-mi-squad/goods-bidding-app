@@ -9,8 +9,8 @@ const createJestConfig = nextJest({
 // Add any custom config to be passed to Jest
 const customJestConfig = {
   collectCoverageFrom: [
-    'pages/**/*.{ts,tsx}',
-    'components/**/*.{ts,tsx}',
+    'src/pages/**/*.{ts,tsx}',
+    'src/components/**/*.{ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
@@ -28,7 +28,7 @@ const customJestConfig = {
     // https://jestjs.io/docs/webpack#handling-static-assets
     '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$': `<rootDir>/__mocks__/fileMock.js`,
 
-    '^@/components/(.*)$': '<rootDir>/components/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   testEnvironment: 'jsdom',
 };

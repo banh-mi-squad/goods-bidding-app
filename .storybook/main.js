@@ -10,9 +10,9 @@ module.exports = {
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@/components': path.resolve(__dirname, '../components/'),
-      '@/pages': path.resolve(__dirname, '../pages/'),
+      '@': path.resolve(__dirname, '../src/'),
     };
+    console.log(config.resolve.alias);
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },
