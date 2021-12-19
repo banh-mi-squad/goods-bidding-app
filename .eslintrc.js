@@ -35,5 +35,16 @@ module.exports = {
     ],
     'import/newline-after-import': 1,
     curly: ['error', 'all'],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };
